@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, TextInput, Button, ActivityIndicator } from 'react-native'
+import { View, StyleSheet, TextInput, Button, ActivityIndicator, Text } from 'react-native'
 
 import firebase from 'firebase'
 
@@ -12,7 +12,8 @@ export default class LoginPage extends React.Component {
         this.state = {
             mail: '',
             password: '',
-            isLoading: false
+            isLoading: false,
+            message: ''
         }
     }
 
@@ -35,19 +36,43 @@ export default class LoginPage extends React.Component {
     }
 
     tryLogin() {
-        this.setState({ isLoading: true })
+        this.setState({ isLoading: true, message: '' })
         const { mail, password } = this.state
 
         firebase
             .auth()
             .signInWithEmailAndPassword(mail, password)
             .then(user => {
-                console.log('Usuário autenticado!', user)
+                this.setState({ message: 'Sucesso!' })
             })
             .catch(error => {
-                console.log('Usuário não encontrado', error)
+                this.setState({ 
+                    message: this.getMessageByErrorCode(error.code)
+                })
             })
             .then(() => this.setState({ isLoading: false }))
+    }
+
+    getMessageByErrorCode(errorCode) {
+        switch (errorCode) {
+            case 'auth/user-not-found':
+                return 'Usuário não encontrado'
+            case 'auth/wrong-password':
+                return 'Senha incoreta'
+            default :
+                return 'Erro desconhecido'
+        }
+    }
+
+    renderMessage() {
+        const { message } = this.state
+        if (!message) 
+            return null
+        return (
+            <View>
+                <Text>{message}</Text>
+            </View>
+        )
     }
 
     renderButton() {
@@ -83,6 +108,7 @@ export default class LoginPage extends React.Component {
                 </FormRow>
 
                 { this.renderButton() }
+                { this.renderMessage() }
             </View>
         )
     }
