@@ -1,10 +1,10 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation'
 
-import LoginScreen from './pages/LoginScreen'
+import LoginPage from './pages/LoginPage'
 
 const AppNavigator = createStackNavigator({
     'Login': {
-        screen: LoginScreen,
+        screen: LoginPage,
         navigationOptions: {
             title: 'Bem vindo!'
         }
