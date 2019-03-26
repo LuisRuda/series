@@ -4,8 +4,7 @@ import {
     StyleSheet,
     TextInput, Button,
     ActivityIndicator,
-    Text,
-    Alert
+    Text
 } from 'react-native'
 import firebase from 'firebase'
 import { connect } from 'react-redux'
@@ -45,14 +44,25 @@ class LoginPage extends React.Component {
     }
 
     tryLogin() {
-        this.setState({ isLoading: true, message: '' })
-        const { mail: email, password } = this.state
+        this.setState({ isLoading: true, message: '' });
+        const { mail: email, password } = this.state;
 
         this.props.tryLogin({ email, password })
-            .then(() => {
-                this.setState({ message: 'Sucesso!'})
-                this.props.navigation.replace('Main')
+            .then(user => {
+                if (user)
+                    return this.props.navigation.replace('Main');
+
+                this.setState({
+                    isLoading: false,
+                    message: ''
+                });
             })
+            .catch(error => {
+                this.setState({
+                    isLoading: false,
+                    message: this.getMessageByErrorCode(error.code)
+                });
+            });
     }
 
     getMessageByErrorCode(errorCode) {
