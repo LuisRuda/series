@@ -1,10 +1,10 @@
 {
-  "packagerPort": null,
-  "packagerPid": null,
+  "packagerPort": 19001,
+  "packagerPid": 8768,
   "webpackServerPort": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerNgrokUrl": "https://h4-axh.luis-ruda.series.exp.direct",
+  "packagerNgrokUrl": "https://packager.h4-axh.luis-ruda.series.exp.direct",
+  "ngrokPid": 11828,
   "devToolsPort": 19002,
-  "expoServerPort": null
+  "expoServerPort": 19000
 }
