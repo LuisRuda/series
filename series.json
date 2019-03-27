@@ -1,6 +1,6 @@
 [
     {
-        "key": 1,
+        "id": 1,
         "title": "Black Mirror",
         "gender": "Ficção Científica",
         "rate": 100,
@@ -10,7 +10,7 @@
             "Black Mirror é uma série de televisão britânica antológica de ficção científica criada por Charlie Brooker e centrada em temas obscuros e satíricos que examinam a sociedade moderna, particularmente a respeito das consequências imprevistas das novas tecnologias. Os episódios são trabalhos autônomos, que geralmente se passam em um presente alternativo ou em um futuro próximo."
     },
     {
-        "key": 2,
+        "id": 2,
         "title": "Friends",
         "gender": "Comédia",
         "rate": 95,
@@ -20,7 +20,7 @@
             "Friends é uma premiada sitcom americana criada por David Crane e Marta Kauffman e apresentada pela rede de televisão NBC entre 22 de setembro de 1994 e 6 de maio de 2004, com um total de 236 episódios."
     },
     {
-        "key": 3,
+        "id": 3,
         "title": "Todo mundo odeia o Chris",
         "gender": "Comédia",
         "rate": 100,
@@ -30,7 +30,7 @@
             "Everybody Hates Chris (Todo Mundo Odeia o Chris (título no Brasil) ou Todos Contra o Chris (título em Portugal)) é uma série de televisão estadunidense de comédia dramática inspirado nas experiências pessoais de Chris Rock no bairro de Bed-Stuy, em Nova Iorque, seguindo um estilo muito parecido com a série Anos Incríveis."
     },
     {
-        "key": 4,
+        "id": 4,
         "title": "Game of Thrones",
         "gender": "Comédia",
         "rate": 97,
@@ -40,7 +40,7 @@
             "Game of Thrones é uma série de televisão norte-americana criada por David Benioff e D. B. Weiss, e baseada na série de livros A Song of Ice and Fire, de George R. R. Martin."
     },
     {
-        "key": 5,
+        "id": 5,
         "title": "The Simpsons",
         "gender": "Comédia",
         "rate": 95,
@@ -50,7 +50,7 @@
             "The Simpsons (Os Simpsons, no Brasil e Portugal) é uma série de animação adulta e sitcom norte-americana criada por Matt Groening para a Fox Broadcasting Company. A série é uma paródia satírica do estilo de vida da classe média dos Estados Unidos, simbolizada pela família protagonista, que consiste de Homer Jay Simpson, Marjorie (Marge) Bouvier Simpson, Bartholomew (Bart) Simpson, Elisabeth (Lisa) Marie Simpson e Margareth (Maggie) Simpson. A série se passa na fictícia cidade de Springfield e satiriza a cultura e a sociedade norte-americanas, a televisão e vários aspectos da condição humana."
     },
     {
-        "key": 6,
+        "id": 6,
         "title": "Vikings",
         "gender": "Comédia",
         "rate": 100,
@@ -60,7 +60,7 @@
             "Vikings é inspirada nas sagas do Viking Ragnar Lothbrok, um dos mais conhecidos heróis nórdicos lendários e chamado de flagelo da Inglaterra e da França. A série retrata Ragnar como um fazendeiro que alcança a fama por seus ataques bem-sucedidos na Inglaterra e, mais tarde, se torna um Rei escandinavo, com o apoio de sua família e colegas guerreiros: seu irmão Rollo, seu filho Björn Flanco de Ferro e suas esposas—a escudeira Lagertha e a princesa Aslaug."
     },
     {
-        "key": 7,
+        "id": 7,
         "title": "The Walking Dead ",
         "gender": "Drama",
         "rate": 95,
@@ -70,7 +70,7 @@
             "Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins, and must lead a group of survivors to stay alive."
     },
     {
-        "key": 8,
+        "id": 8,
         "title": "Breaking Bad",
         "gender": "Ação",
         "rate": 97,
@@ -80,7 +80,7 @@
             "Breaking Bad foi uma premiada série de televisão norte-americana neo-westerner criada e produzida por Vince Gilligan que retrata a vida do químico Walter White, um homem brilhante frustrado em dar aulas para adolescentes do ensino médio enquanto lida com um filho sofrendo de paralisia cerebral, uma esposa grávida e dívidas intermináveis. "
     },
     {
-        "key": 9,
+        "id": 9,
         "title": "The Fresh Prince",
         "gender": "Comédia",
         "rate": 97,
