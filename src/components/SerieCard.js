@@ -1,8 +1,10 @@
 import React from 'react'
-import { View, Text, StyleSheet, Dimensions, Image } from 'react-native'
+import { View, Text, StyleSheet, Dimensions, Image, TouchableOpacity } from 'react-native'
 
-const SerieCard = ({ serie, isFirstColumn }) => (
-    <View style={[
+const SerieCard = ({ serie, isFirstColumn, onNavigate }) => (
+    <TouchableOpacity 
+        onPress={onNavigate}
+        style={[
         styles.container,
         isFirstColumn ? styles.firstColumn : styles.lastColumn
     ]}>
@@ -18,7 +20,7 @@ const SerieCard = ({ serie, isFirstColumn }) => (
                 <Text style={styles.cardTitle}>{serie.title}</Text>
             </View>
         </View>
-    </View>
+    </TouchableOpacity>
 )
 
 const styles = StyleSheet.create({

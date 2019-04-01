@@ -14,6 +14,7 @@ const SeriesPage = props => (
                 <SerieCard
                     serie={item}
                     isFirstColumn = {isEven(index)}
+                    onNavigate={() => props.navigation.navigate('SerieDetail', { serie: item })}
                 />
             )}
             keyExtractor={item => item.id}
