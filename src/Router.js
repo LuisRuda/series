@@ -31,22 +31,22 @@ const AppNavigator = createStackNavigator({
         }
     },
 }, {
-    defaultNavigationOptions: {
-        title: 'Séries!',
+        defaultNavigationOptions: {
+            title: 'Séries!',
             headerTintColor: '#fff',
-                headerStyle: {
-            backgroundColor: '#6ca2f7',
+            headerStyle: {
+                backgroundColor: '#6ca2f7',
                 borderBottomWidth: 1,
-                    borderBottomColor: '#c5c5c5'
-        },
-        headerTitleStyle: {
-            color: '#fff',
+                borderBottomColor: '#c5c5c5'
+            },
+            headerTitleStyle: {
+                color: '#fff',
                 fontSize: 30,
-                    flexGrow: 1,
-                        textAlign: 'center'
+                flexGrow: 1,
+                textAlign: 'center'
+            }
         }
-    }
-})
+    })
 
 const AppContainer = createAppContainer(AppNavigator)
 
