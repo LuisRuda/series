@@ -12,7 +12,7 @@ export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         case SET_FIELD:
             const newState = { ...state }
-            newState[action.type] = action.value
+            newState[action.field] = action.value
             return newState
         default:
             return state
