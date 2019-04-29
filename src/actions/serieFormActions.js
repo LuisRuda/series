@@ -17,11 +17,11 @@ const serieSavedSuccess = () => ({
 export const saveSerie = serie => {
     const { currentUser } = firebase.auth()
     return async dispatch => {
-        return await firebase
+        await firebase
             .database()
             .ref(`/users/${currentUser.uid}/series`)
             .push(serie)
-            .then(() => dispatch(serieSavedSuccess()))
+        dispatch(serieSavedSuccess())
     }
 
 }
