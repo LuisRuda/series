@@ -5,10 +5,10 @@ import { connect } from 'react-redux'
 import FormRow from '../components/FormRow'
 import { setField, saveSerie } from '../actions'
 
-const SerieFormPage = ({ serieForm, setField, saveSerie }) => (
-    <KeyboardAvoidingView 
+const SerieFormPage = ({ serieForm, setField, saveSerie, navigation }) => (
+    <KeyboardAvoidingView
         keyboardVerticalOffset={150}
-        behavior="padding" 
+        behavior="padding"
         enabled>
         <ScrollView>
             <FormRow first>
@@ -57,7 +57,12 @@ const SerieFormPage = ({ serieForm, setField, saveSerie }) => (
             </FormRow>
             <Button
                 title="Salvar"
-                onPress={() => saveSerie(serieForm)} />
+                onPress={() => {
+                    saveSerie(serieForm)
+                        .then(() => {
+                            navigation.goBack()
+                        })
+                }} />
         </ScrollView>
     </KeyboardAvoidingView>
 )
