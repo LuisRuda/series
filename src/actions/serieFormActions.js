@@ -1,5 +1,11 @@
 import firebase from 'firebase'
 
+export const SET_WHOLE_SERIE = 'SET_WHOLE_SERIE'
+export const setWholeSerie = serie => ({
+    type: SET_WHOLE_SERIE,
+    serie
+})
+
 export const SET_FIELD = 'SET_FIELD'
 export const setField = (field, value) => {
     return {
