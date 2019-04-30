@@ -6,8 +6,9 @@ import {
 } from '../actions'
 
 const INITIAL_STATE = {
+    id: null,
     title: '',
-    gender: 'police',
+    gender: 'Policial',
     rate: 0,
     img: '',
     description: ''
