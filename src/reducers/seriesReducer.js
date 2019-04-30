@@ -1,8 +1,6 @@
 import { SET_SERIES } from '../actions'
 
-const INITIAL_STATE = {}
-
-export default function(state = INITIAL_STATE, action) {
+export default function(state = null, action) {
     switch (action.type) {
         case SET_SERIES:
             return action.series

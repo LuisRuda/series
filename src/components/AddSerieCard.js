@@ -20,7 +20,7 @@ const AddSerieCard = ({ serie, isFirstColumn, onPress }) => (
 const styles = StyleSheet.create({
     container: {
         width: '50%',
-        padding: 5,
+        padding: 20,
         height: Dimensions.get('window').width / 2
     },
     card: {

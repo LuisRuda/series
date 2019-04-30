@@ -8,16 +8,20 @@ class SerieDetailPage extends React.Component {
     render() {
         return (
             <ScrollView>
-                <Image 
-                    style={styles.image}
-                    source={{
-                        uri: this.props.navigation.state.params.serie.img
-                    }}
-                />
-                <Line label="Título" content={this.props.navigation.state.params.serie.title}/>
-                <Line label="Gênerp" content={this.props.navigation.state.params.serie.gender}/>
-                <Line label="Nota" content={this.props.navigation.state.params.serie.rate}/>
-                <LongText label="Descrição" content={this.props.navigation.state.params.serie.description}/>
+                {
+                    serie.img
+                        ? <Image
+                            style={styles.image}
+                            source={{
+                                uri: this.props.navigation.state.params.serie.img
+                            }}
+                        />
+                        : null
+                }
+                <Line label="Título" content={this.props.navigation.state.params.serie.title} />
+                <Line label="Gênerp" content={this.props.navigation.state.params.serie.gender} />
+                <Line label="Nota" content={this.props.navigation.state.params.serie.rate} />
+                <LongText label="Descrição" content={this.props.navigation.state.params.serie.description} />
             </ScrollView>
         )
     }
